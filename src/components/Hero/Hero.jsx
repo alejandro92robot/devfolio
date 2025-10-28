@@ -54,9 +54,8 @@ const Hero = () => {
             
             <div className="hero-social fade-in-up">
               {[
-                { icon: Github, href: 'https://github.com/tuusuario', label: 'GitHub' },
-                { icon: Linkedin, href: 'https://linkedin.com/in/tuusuario', label: 'LinkedIn' },
-                { icon: Mail, href: 'mailto:alejandro@ejemplo.com', label: 'Email' }
+                { icon: Github, href: 'https://github.com/alejandro92robot', label: 'GitHub' },
+                { icon: Mail, href: 'mailto:aguilerac.alejandro@gmail.com', label: 'Email' }
               ].map((social, index) => (
                 <a
                   key={social.label}
