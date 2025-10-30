@@ -53,6 +53,17 @@ export const projects = [
     github: "https://github.com/tuusuario/analytics-dashboard",
     demo: "https://tuanalytics.com",
     featured: true
+  },
+  {
+    id: 6,
+    title: "Caracterización eléctrica y óptica de la aguja de plasma para su uso en aplicaciones biomédicas.",
+    description: "Este estudio analiza las características eléctricas y de emisión óptica de una aguja de plasma de corriente continua (DC). Los resultados muestran que la descarga es pulsante y que, al aumentar el voltaje aplicado, la frecuencia de descarga se incrementa casi linealmente sin que cambien el voltaje o la corriente de descarga.",
+    image: "/devfolio/images/plasma_needle.png",
+    technologies: ["React", "Three.js", "MongoDB", "Node.js"],
+    category: "profesional",
+    github: "https://www.academia.edu/72221585/Electrical_and_Optical_Characterization_of_the_Plasma_Needle_for_Use_in_Biomedical_Applications?email_work_card=view-paper",
+    demo: "https://www.academia.edu/72221585/Electrical_and_Optical_Characterization_of_the_Plasma_Needle_for_Use_in_Biomedical_Applications?email_work_card=view-paper",
+    featured: true
   }
 ];
 
@@ -81,7 +92,7 @@ export const skills = [
       { name: "Express", level: 89, description: "Middleware, routing, autenticación JWT" },
       { name: "FastAPI", level: 86, description: "APIs rápidas, documentación automática, async" },
       { name: "MongoDB", level: 88, description: "Aggregations, indexes, relaciones" },
-      { name: "PostgreSQL", level: 84, description: "Consultas complejas, transacciones, optimización" }
+      { name: "MySQL", level: 84, description: "Consultas complejas, transacciones, optimización" }
     ]
   },
   {
@@ -91,10 +102,64 @@ export const skills = [
     items: [
       { name: "React Native", level: 89, description: "Cross-platform, componentes nativos, performance" },
       { name: "Flutter", level: 86, description: "Widgets, Dart, animaciones nativas" },
-      { name: "iOS Development", level: 81, description: "Swift, UIKit, SwiftUI, App Store" },
-      { name: "Android Development", level: 84, description: "Kotlin, Jetpack Compose, Google Play" },
-      { name: "Expo", level: 86, description: "Development builds, OTA updates, plugins" },
+      { name: "iOS Development", level: 71, description: "Swift, UIKit, SwiftUI, App Store" },
+      { name: "Android Development", level: 79, description: "Kotlin, Jetpack Compose, Google Play" },
+      { name: "Expo", level: 91, description: "Development builds, OTA updates, plugins" },
       { name: "Mobile UI/UX", level: 83, description: "Design systems, responsive layouts, gestures" }
+    ]
+  },
+  {
+    category: "Hardware & Embedded Systems",
+    icon: "🔌",
+    color: "#FF9F43",
+    items: [
+      { name: "ESP32", level: 95, description: "Programación WiFi/BLE, FreeRTOS, sensores IoT" },
+      { name: "ESP8266", level: 95, description: "NodeMCU, aplicaciones IoT, conectividad WiFi" },
+      { name: "Arduino", level: 95, description: "Uno, Mega, Nano, programación en C++" },
+      { name: "Diseño de Circuitos", level: 87, description: "PCB design, EAGLE, KiCad, análisis de circuitos" },
+      { name: "Programación de Microcontroladores", level: 96, description: "ARM Cortex, AVR, programación en bajo nivel" },
+      { name: "Sistemas Embebidos", level: 86, description: "RTOS, drivers, optimización de recursos" },
+      { name: "Protocolos de Comunicación", level: 94, description: "I2C, SPI, UART, MQTT, WebSocket" }
+    ]
+  },
+  {
+    category: "Automatización & IoT",
+    icon: "🤖",
+    color: "#00D2D3",
+    items: [
+      { name: "Automatización Industrial", level: 55, description: "PLC, SCADA, sistemas de control" },
+      { name: "Robótica", level: 62, description: "ROS, control de motores, sistemas autónomos" },
+      { name: "Sensores y Actuadores", level: 88, description: "Selección, calibración, integración" },
+      { name: "Sistemas IoT", level: 87, description: "Arquitectura cloud-edge, MQTT, gestión de datos" },
+      { name: "Domótica", level: 73, description: "Sistemas inteligentes, automatización residencial" },
+      { name: "Control de Procesos", level: 81, description: "PID, sistemas de feedback, estabilidad" }
+    ]
+  },
+  {
+    category: "Espectroscopía & Análisis Nuclear",
+    icon: "⚛️",
+    color: "#6C5CE7",
+    items: [
+      { name: "Fluorescencia de Rayos X (XRF)", level: 91, description: "Desarrollo de sistemas XRF para análisis de concentraciones en keroseno" },
+      { name: "Espectroscopía de Plasma frío", level: 89, description: "Trabajo con agujas de plasma, análisis espectral" },
+      { name: "Análisis de Yodo en Keroseno", level: 93, description: "Desarrollo de métodos para medición de concentraciones de yodo" },
+      { name: "Espectrometría Gamma", level: 85, description: "Análisis de materiales radiactivos, identificación de isótopos" },
+      { name: "Técnicas de Espectroscopía", level: 88, description: "Absorción atómica, emisión, técnicas ópticas" },
+      { name: "Análisis de Materiales", level: 86, description: "Caracterización de muestras, preparación de especímenes" },
+      { name: "Calibración de Instrumentación", level: 90, description: "Calibración de espectrómetros, validación de métodos" }
+    ]
+  },
+  {
+    category: "Simulación Física & Estudios Nucleares",
+    icon: "🔬",
+    color: "#A29BFE",
+    items: [
+      { name: "Geant4", level: 87, description: "Simulación de partículas, física nuclear, diseño de detectores" },
+      { name: "ROOT Framework", level: 84, description: "Análisis de datos científicos, visualización, procesamiento" },
+      { name: "Protección Radiológica", level: 88, description: "Dosimetría, blindaje, normas de seguridad nuclear" },
+      { name: "Análisis de Datos Experimentales", level: 91, description: "Procesamiento de datos de espectroscopía, estadísticas" },
+      { name: "Métodos de Monte Carlo", level: 86, description: "Simulación estadística, transporte de partículas" },
+      { name: "Instrumentación Nuclear", level: 89, description: "Detectores de radiación, sistemas de adquisición de datos" }
     ]
   },
   {
@@ -102,17 +167,17 @@ export const skills = [
     icon: "🔒",
     color: "#96CEB4",
     items: [
-      { name: "Wireshark", level: 86, description: "Análisis de tráfico, filtros, troubleshooting" },
-      { name: "Metasploit", level: 82, description: "Exploits, payloads, post-exploitation" },
-      { name: "Nmap", level: 89, description: "Network scanning, OS detection, vulnerability discovery" },
-      { name: "Burp Suite", level: 83, description: "Web app testing, intercepting proxy, scanner" },
+      { name: "Wireshark", level: 46, description: "Análisis de tráfico, filtros, troubleshooting" },
+      { name: "Metasploit", level: 32, description: "Exploits, payloads, post-exploitation" },
+      { name: "Nmap", level: 19, description: "Network scanning, OS detection, vulnerability discovery" },
+    /** { name: "Burp Suite", level: 83, description: "Web app testing, intercepting proxy, scanner" },
       { name: "OWASP Top 10", level: 91, description: "Vulnerabilidades web, prevención, best practices" },
-      { name: "Penetration Testing", level: 84, description: "Ethical hacking, reporting, methodologies" }
+      { name: "Penetration Testing", level: 84, description: "Ethical hacking, reporting, methodologies" } */ 
     ]
   },
   {
     category: "Machine Learning & AI",
-    icon: "🤖",
+    icon: "🧠",
     color: "#FECA57",
     items: [
       { name: "TensorFlow", level: 89, description: "Deep learning, Keras, model training" },
@@ -120,7 +185,7 @@ export const skills = [
       { name: "Scikit-learn", level: 91, description: "Classic ML algorithms, preprocessing, evaluation" },
       { name: "Pandas", level: 93, description: "Data manipulation, analysis, cleaning" },
       { name: "NumPy", level: 91, description: "Numerical computing, array operations" },
-      { name: "Computer Vision", level: 84, description: "OpenCV, image processing, object detection" }
+      { name: "Computer Vision", level: 14, description: "OpenCV, image processing, object detection" }
     ]
   },
   {
@@ -131,8 +196,9 @@ export const skills = [
       { name: "Docker", level: 86, description: "Containerization, Docker Compose, multi-stage builds" },
       { name: "AWS", level: 84, description: "EC2, S3, Lambda, RDS, IAM" },
       { name: "Azure", level: 79, description: "App Services, Functions, Cosmos DB" },
-      { name: "CI/CD", level: 86, description: "GitHub Actions, GitLab CI, Jenkins pipelines" },
-      { name: "Terraform", level: 78, description: "Infrastructure as Code, modules, state management" }
+     /* { name: "CI/CD", level: 86, description: "GitHub Actions, GitLab CI, Jenkins pipelines" },
+      { name: "Terraform", level: 78, description: "Infrastructure as Code, modules, state management" },
+      { name: "Kubernetes", level: 76, description: "Orchestration, deployments, service mesh" } */
     ]
   }
 ];
