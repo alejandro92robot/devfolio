@@ -57,7 +57,7 @@ export const projects = [
   {
     id: 6,
     title: "Caracterización eléctrica y óptica de la aguja de plasma para su uso en aplicaciones biomédicas.",
-    description: "Este estudio analiza las características eléctricas y de emisión óptica de una aguja de plasma de corriente continua (DC). Los resultados muestran que la descarga es pulsante y que, al aumentar el voltaje aplicado, la frecuencia de descarga se incrementa casi linealmente sin que cambien el voltaje o la corriente de descarga.",
+    description: "Este estudio analiza las características eléctricas y de emisión óptica de una aguja de plasma de corriente continua (DC).",
     image: "/devfolio/images/plasma_needle.png",
     technologies: ["React", "Three.js", "MongoDB", "Node.js"],
     category: "profesional",
@@ -170,9 +170,6 @@ export const skills = [
       { name: "Wireshark", level: 46, description: "Análisis de tráfico, filtros, troubleshooting" },
       { name: "Metasploit", level: 32, description: "Exploits, payloads, post-exploitation" },
       { name: "Nmap", level: 19, description: "Network scanning, OS detection, vulnerability discovery" },
-    /** { name: "Burp Suite", level: 83, description: "Web app testing, intercepting proxy, scanner" },
-      { name: "OWASP Top 10", level: 91, description: "Vulnerabilidades web, prevención, best practices" },
-      { name: "Penetration Testing", level: 84, description: "Ethical hacking, reporting, methodologies" } */ 
     ]
   },
   {
@@ -196,9 +193,6 @@ export const skills = [
       { name: "Docker", level: 86, description: "Containerization, Docker Compose, multi-stage builds" },
       { name: "AWS", level: 84, description: "EC2, S3, Lambda, RDS, IAM" },
       { name: "Azure", level: 79, description: "App Services, Functions, Cosmos DB" },
-     /* { name: "CI/CD", level: 86, description: "GitHub Actions, GitLab CI, Jenkins pipelines" },
-      { name: "Terraform", level: 78, description: "Infrastructure as Code, modules, state management" },
-      { name: "Kubernetes", level: 76, description: "Orchestration, deployments, service mesh" } */
     ]
   }
 ];
