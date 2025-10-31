@@ -5,7 +5,11 @@ import './Hero.css';
 
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
-  const texts = ['Desarrollador Full Stack', 'Especialista en Ciberseguridad', 'Desarrollador Mobile'];
+  const texts = [
+  'Desarrollador Full Stack',
+  'Investigador en Tecnología y Ciencia Aplicada',
+  'Creador de Soluciones Sostenibles'
+];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -37,8 +41,7 @@ const Hero = () => {
             </div>
             
             <p className="hero-description fade-in-up">
-              Desarrollador full stack especializado en crear soluciones innovadoras 
-              con enfoque en ciberseguridad, machine learning y desarrollo móvil.
+              Desarrollador especializado en soluciones tecnológicas y científicas innovadoras que impulsan la sostenibilidad y el desarrollo sustentable.
             </p>
             
             <div className="hero-buttons fade-in-up">

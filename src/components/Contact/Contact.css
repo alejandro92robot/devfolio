@@ -132,51 +132,6 @@
   font-weight: 600;
 }
 
-.contact-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.stat {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: 1rem;
-  transition: all 0.3s ease;
-}
-
-.stat:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--primary);
-  transform: translateY(-2px);
-}
-
-.stat-icon {
-  color: var(--primary);
-  flex-shrink: 0;
-}
-
-.stat-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.stat-number {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.stat-label {
-  font-size: 0.875rem;
-  color: var(--text-muted);
-}
-
 .contact-form {
   background: var(--bg-card);
   border: 1px solid var(--border-light);

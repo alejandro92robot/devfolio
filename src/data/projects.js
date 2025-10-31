@@ -19,7 +19,7 @@ export const projects = [
     category: "educativo",
     github: "https://github.com/alejandro92robot/biblioteca_front.git",
     demo: "https://github.com/alejandro92robot/biblioteca_front.git",
-    featured: true
+    featured: false
   },
   {
     id: 3,
@@ -57,9 +57,9 @@ export const projects = [
   {
     id: 6,
     title: "Caracterización eléctrica y óptica de la aguja de plasma para su uso en aplicaciones biomédicas.",
-    description: "Este estudio analiza las características eléctricas y de emisión óptica de una aguja de plasma de corriente continua (DC).",
+    description: "Este estudio analiza las características eléctricas y de emisión óptica de una aguja de plasma de corriente continua.",
     image: "/devfolio/images/plasma_needle.png",
-    technologies: ["React", "Three.js", "MongoDB", "Node.js"],
+    technologies: ["Plasma Needle", "MDO 3034", "LR1 Serial Bus Spectrometer", "NumPy"],
     category: "profesional",
     github: "https://www.academia.edu/72221585/Electrical_and_Optical_Characterization_of_the_Plasma_Needle_for_Use_in_Biomedical_Applications?email_work_card=view-paper",
     demo: "https://www.academia.edu/72221585/Electrical_and_Optical_Characterization_of_the_Plasma_Needle_for_Use_in_Biomedical_Applications?email_work_card=view-paper",
@@ -140,13 +140,13 @@ export const skills = [
     icon: "⚛️",
     color: "#6C5CE7",
     items: [
-      { name: "Fluorescencia de Rayos X (XRF)", level: 91, description: "Desarrollo de sistemas XRF para análisis de concentraciones en keroseno" },
+      { name: "Fluorescencia de Rayos X (XRF)", level: 21, description: "Desarrollo de sistemas XRF para análisis de concentraciones en keroseno" },
       { name: "Espectroscopía de Plasma frío", level: 89, description: "Trabajo con agujas de plasma, análisis espectral" },
-      { name: "Análisis de Yodo en Keroseno", level: 93, description: "Desarrollo de métodos para medición de concentraciones de yodo" },
-      { name: "Espectrometría Gamma", level: 85, description: "Análisis de materiales radiactivos, identificación de isótopos" },
+      { name: "Análisis de Yodo en Keroseno", level: 13, description: "Desarrollo de métodos para medición de concentraciones de yodo" },
+      { name: "Espectrometría Gamma", level: 15, description: "Análisis de materiales radiactivos, identificación de isótopos" },
       { name: "Técnicas de Espectroscopía", level: 88, description: "Absorción atómica, emisión, técnicas ópticas" },
-      { name: "Análisis de Materiales", level: 86, description: "Caracterización de muestras, preparación de especímenes" },
-      { name: "Calibración de Instrumentación", level: 90, description: "Calibración de espectrómetros, validación de métodos" }
+      { name: "Análisis de Materiales", level: 66, description: "Caracterización de muestras, preparación de especímenes" },
+      { name: "Calibración de Instrumentación", level: 80, description: "Calibración de espectrómetros, validación de métodos" }
     ]
   },
   {
