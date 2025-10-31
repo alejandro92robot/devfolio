@@ -282,3 +282,40 @@
     padding: 1rem;
   }
 }
+
+/* RESET DE CONFLICTOS CON ABOUT.CSS */
+@media (max-width: 768px) {
+  section#skills.skills-section {
+    /* Forzar visibilidad */
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    
+    /* Reset de posibles overflow conflicts */
+    overflow: visible !important;
+    height: auto !important;
+    min-height: auto !important;
+    
+    /* Asegurar spacing */
+    padding: 3rem 0 !important;
+  }
+  
+  #skills .skills-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    visibility: visible !important;
+  }
+  
+  #skills .skill-category {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+  
+  /* Reset específico de posibles conflictos con about */
+  #skills .container {
+    padding: 0 1rem !important;
+    max-width: 100% !important;
+  }
+}
