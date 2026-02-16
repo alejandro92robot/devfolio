@@ -152,11 +152,11 @@
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .filters {
     gap: 0.5rem;
   }
-  
+
   .filter-btn {
     font-size: 0.875rem;
     padding: 0.375rem 0.75rem;

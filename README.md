@@ -1,21 +1,53 @@
-<<<<<<< HEAD
-# React + Vite
+# Alejandro Aguilera - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Deploy Status](https://github.com/alejandro92robot/devfolio/actions/workflows/deploy.yml/badge.svg)
 
-Currently, two official plugins are available:
+Bienvenido al repositorio de mi portafolio profesional. Este proyecto muestra mis habilidades, experiencia y proyectos destacados como desarrollador Full Stack e Investigador en Tecnología.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demo
+[Visitar Portafolio](https://alejandro92robot.github.io/devfolio/)
 
-## React Compiler
+## 🛠 Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Core**: React, Vite
+- **Estilos**: Rutas Css, Lucide React, Particles.js
+- **Testing**: Vitest, React Testing Library
+- **Formularios**: Firebase Firestore
+- **CI/CD**: GitHub Actions
 
-## Expanding the ESLint configuration
+## ⚙️ Instalación y Configuración
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# devfolio
-Mi portafolio personal como desarrollador
->>>>>>> 7bc85992e5ad42d8d90bea6fae2def16eda6a5bc
+1.  **Clonar el repositorio**
+    ```bash
+    git clone https://github.com/alejandro92robot/devfolio.git
+    cd devfolio
+    ```
+
+2.  **Instalar dependencias**
+    ```bash
+    npm install
+    ```
+
+3.  **Configurar Firebase**
+    - Crea un archivo `.env` en la raíz basado en `.env.example`.
+    - Agrega tus credenciales de Firebase (ver `FIREBASE_SETUP.md` para más detalles).
+
+4.  **Iniciar servidor de desarrollo**
+    ```bash
+    npm run dev
+    ```
+
+## 🧪 Testing
+
+Ejecutar pruebas unitarias con Vitest:
+
+```bash
+npm test
+```
+
+## 📦 Despliegue
+
+El proyecto está configurado para desplegarse automáticamente en GitHub Pages cada vez que se hace un push a la rama `main`, mediante GitHub Actions.
+
+---
+Desarrollado con ❤️ por Alejandro Aguilera

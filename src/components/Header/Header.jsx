@@ -10,10 +10,10 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
+
       // Detectar sección activa
       const sections = ['home', 'projects', 'skills', 'about', 'contact'];
-      const current = sections.find(section => {
+      const current = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
@@ -21,7 +21,7 @@ const Header = () => {
         }
         return false;
       });
-      
+
       if (current) setActiveSection(current);
     };
 
@@ -34,18 +34,18 @@ const Header = () => {
     { name: 'Proyectos', href: '#projects' },
     { name: 'Habilidades', href: '#skills' },
     { name: 'Sobre mí', href: '#about' },
-    { name: 'Contacto', href: '#contact' }
+    { name: 'Contacto', href: '#contact' },
   ];
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
-      <div className="container">
-        <div className="nav-wrapper">
-          <a href="#home" className="logo">
+      <div className='container'>
+        <div className='nav-wrapper'>
+          <a href='#home' className='logo'>
             <Code2 size={24} />
-            <span className="logo-text">&lt;DevFolio /&gt;</span>
+            <span className='logo-text'>&lt;DevFolio /&gt;</span>
           </a>
-          
+
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             {navItems.map((item) => (
               <a
@@ -55,15 +55,15 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-                <span className="nav-link-underline"></span>
+                <span className='nav-link-underline'></span>
               </a>
             ))}
           </nav>
 
           <button
-            className="menu-toggle"
+            className='menu-toggle'
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label='Toggle menu'
           >
             <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
               <span></span>

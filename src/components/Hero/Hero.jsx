@@ -6,10 +6,10 @@ import './Hero.css';
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
   const texts = [
-  'Desarrollador Full Stack',
-  'Investigador en Tecnología y Ciencia Aplicada',
-  'Creador de Soluciones Sostenibles'
-];
+    'Desarrollador Full Stack',
+    'Investigador en Tecnología y Ciencia Aplicada',
+    'Creador de Soluciones Sostenibles',
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,51 +20,52 @@ const Hero = () => {
   }, [texts.length]);
 
   return (
-    <section id="home" className="hero">
+    <section id='home' className='hero'>
       <Particles count={20} />
-      <div className="hero-background"></div>
-      
-      <div className="container">
-        <div className="hero-content">
-          <div className="hero-text">
-            <div className="hero-badge fade-in-up">
-              <span className="badge-text">¡Bienvenido a mi portafolio!</span>
+      <div className='hero-background'></div>
+
+      <div className='container'>
+        <div className='hero-content'>
+          <div className='hero-text'>
+            <div className='hero-badge fade-in-up'>
+              <span className='badge-text'>¡Bienvenido a mi portafolio!</span>
             </div>
-            
-            <h1 className="hero-title">
-              Hola, soy <span className="text-gradient">Alejandro Aguilera</span>
+
+            <h1 className='hero-title'>
+              Hola, soy <span className='text-gradient'>Alejandro Aguilera</span>
             </h1>
-            
-            <div className="hero-typing">
-              <span className="typing-text">{texts[textIndex]}</span>
-              <span className="typing-cursor">|</span>
+
+            <div className='hero-typing'>
+              <span className='typing-text'>{texts[textIndex]}</span>
+              <span className='typing-cursor'>|</span>
             </div>
-            
-            <p className="hero-description fade-in-up">
-              Desarrollador especializado en soluciones tecnológicas y científicas innovadoras que impulsan la sostenibilidad y el desarrollo sustentable.
+
+            <p className='hero-description fade-in-up'>
+              Desarrollador especializado en soluciones tecnológicas y científicas innovadoras que
+              impulsan la sostenibilidad y el desarrollo sustentable.
             </p>
-            
-            <div className="hero-buttons fade-in-up">
-              <a href="#projects" className="btn btn-primary pulse-on-hover">
+
+            <div className='hero-buttons fade-in-up'>
+              <a href='#projects' className='btn btn-primary pulse-on-hover'>
                 Explorar Proyectos
                 <ArrowDown size={20} />
               </a>
-              <a href="/cv.pdf" download className="btn btn-secondary">
+              <a href='/cv.pdf' download className='btn btn-secondary'>
                 Descargar CV
                 <Download size={20} />
               </a>
             </div>
-            
-            <div className="hero-social fade-in-up">
+
+            <div className='hero-social fade-in-up'>
               {[
                 { icon: Github, href: 'https://github.com/alejandro92robot', label: 'GitHub' },
-                { icon: Mail, href: 'mailto:aguilerac.alejandro@gmail.com', label: 'Email' }
+                { icon: Mail, href: 'mailto:aguilerac.alejandro@gmail.com', label: 'Email' },
               ].map((social, index) => (
                 <a
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="social-link"
+                  className='social-link'
                   style={{ animationDelay: `${index * 0.1 + 0.5}s` }}
                 >
                   <social.icon size={20} />
@@ -72,27 +73,27 @@ const Hero = () => {
               ))}
             </div>
           </div>
-          
-          <div className="hero-image float">
-            <div className="image-container">
-              <div className="main-image glass">
+
+          <div className='hero-image float'>
+            <div className='image-container'>
+              <div className='main-image glass'>
                 {/* Reemplaza con tu foto de perfil */}
-                <img 
-                  src="/devfolio/images/profile.JPG" 
-                  alt="Alejandro Aguilera" 
-                  className="profile-image"
+                <img
+                  src='/devfolio/images/profile_new.png'
+                  alt='Alejandro Aguilera'
+                  className='profile-image'
                 />
               </div>
-              <div className="floating-elements">
-                <div className="floating-element element-1">🚀</div>
-                <div className="floating-element element-2">💻</div>
-                <div className="floating-element element-3">🔒</div>
+              <div className='floating-elements'>
+                <div className='floating-element element-1'>🚀</div>
+                <div className='floating-element element-2'>💻</div>
+                <div className='floating-element element-3'>🔒</div>
               </div>
             </div>
           </div>
         </div>
-        
-        <a href="#projects" className="scroll-indicator bounce">
+
+        <a href='#projects' className='scroll-indicator bounce'>
           <ArrowDown size={24} />
         </a>
       </div>

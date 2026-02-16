@@ -39,60 +39,62 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="skills-section">
-      <div className="container">
-        <div className="skills-header">
-          <h2 className="section-title">Mis Habilidades Técnicas</h2>
-          <p className="skills-subtitle">
+    <section id='skills' className='skills-section'>
+      <div className='container'>
+        <div className='skills-header'>
+          <h2 className='section-title'>Mis Habilidades Técnicas</h2>
+          <p className='skills-subtitle'>
             Nivel de competencia en diferentes tecnologías y herramientas
           </p>
         </div>
-        
-        <div className="skills-grid">
+
+        <div className='skills-grid'>
           {skills.map((category, categoryIndex) => (
-            <div 
-              key={category.category} 
+            <div
+              key={category.category}
               className={`skill-category ${isVisible ? 'fade-in-up' : ''}`}
-              style={{ 
+              style={{
                 animationDelay: `${categoryIndex * 0.2}s`,
-                borderLeft: `4px solid ${category.color}`
+                borderLeft: `4px solid ${category.color}`,
               }}
             >
-              <div className="category-header">
-                <div className="category-icon">
+              <div className='category-header'>
+                <div className='category-icon'>
                   <span>{category.icon}</span>
                 </div>
-                <h3 className="category-title">{category.category}</h3>
+                <h3 className='category-title'>{category.category}</h3>
               </div>
-              
-              <div className="skill-items">
+
+              <div className='skill-items'>
                 {category.items.map((skill, index) => (
-                  <div 
+                  <div
                     key={skill.name}
                     className={`skill-item ${selectedSkill?.name === skill.name ? 'active' : ''}`}
-                    onClick={() => setSelectedSkill(selectedSkill?.name === skill.name ? null : skill)}
+                    onClick={() =>
+                      setSelectedSkill(selectedSkill?.name === skill.name ? null : skill)
+                    }
                   >
-                    <div className="skill-main">
-                      <div className="skill-info">
-                        <span className="skill-name">{skill.name}</span>
-                        <div className="skill-level-info">
-                          <span 
-                            className="skill-level-badge"
+                    <div className='skill-main'>
+                      <div className='skill-info'>
+                        <span className='skill-name'>{skill.name}</span>
+                        <div className='skill-level-info'>
+                          <span
+                            className='skill-level-badge'
                             style={{ backgroundColor: getSkillLevelColor(skill.level) }}
                           >
                             {getSkillLevelLabel(skill.level)}
                           </span>
-                          <span className="skill-percentage">{skill.level}%</span>
+                          <span className='skill-percentage'>{skill.level}%</span>
                         </div>
                       </div>
-                      
-                      <div className="skill-bar-container">
-                        <div className="skill-bar">
-                          <div 
-                            className="skill-progress"
-                            style={{ 
+
+                      <div className='skill-bar-container'>
+                        <div className='skill-bar'>
+                          <div
+                            className='skill-progress'
+                            style={{
                               width: `${skill.level}%`,
-                              backgroundColor: getSkillLevelColor(skill.level)
+                              backgroundColor: getSkillLevelColor(skill.level),
                             }}
                           ></div>
                         </div>
@@ -100,21 +102,21 @@ const Skills = () => {
                     </div>
 
                     {selectedSkill?.name === skill.name && (
-                      <div className="skill-details">
-                        <p className="skill-description">{skill.description}</p>
-                        <div className="skill-metrics">
-                          <div className="metric">
-                            <span className="metric-label">Nivel:</span>
-                            <span 
-                              className="metric-value"
+                      <div className='skill-details'>
+                        <p className='skill-description'>{skill.description}</p>
+                        <div className='skill-metrics'>
+                          <div className='metric'>
+                            <span className='metric-label'>Nivel:</span>
+                            <span
+                              className='metric-value'
                               style={{ color: getSkillLevelColor(skill.level) }}
                             >
                               {getSkillLevelLabel(skill.level)}
                             </span>
                           </div>
-                          <div className="metric">
-                            <span className="metric-label">Confianza:</span>
-                            <span className="metric-value">{skill.level}%</span>
+                          <div className='metric'>
+                            <span className='metric-label'>Confianza:</span>
+                            <span className='metric-value'>{skill.level}%</span>
                           </div>
                         </div>
                       </div>
@@ -125,7 +127,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-          {/*
+        {/*
         <div className="skills-legend">
           <h4>Leyenda de Niveles:</h4>
           <div className="legend-items">

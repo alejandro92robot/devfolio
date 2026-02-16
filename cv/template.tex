@@ -1,0 +1,91 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato} 
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Colors
+\definecolor{primary}{RGB}{51, 51, 51}
+\definecolor{secondary}{RGB}{100, 100, 100}
+\definecolor{accent}{RGB}{0, 123, 255}
+
+% Hyperlink Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    filecolor=accent,      
+    urlcolor=accent,
+}
+
+% Section Formatting
+\titleformat{\section}
+{\Large\bfseries\color{primary}}
+{}{0em}
+{}[\titlerule]
+
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Custom Commands
+\newcommand{\entry}[4]{
+    \noindent\textbf{#1} \hfill \textit{#2} \\
+    \noindent\textit{#3} \\
+    \noindent\small{#4} \vspace{8pt}
+}
+
+\newcommand{\project}[4]{
+    \noindent\textbf{\href{#2}{#1}} \hfill \textit{#3} \\
+    \noindent\small{#4} \vspace{6pt}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% HEADER
+\begin{center}
+    {\Huge\bfseries <<NAME>>} \\ \vspace{5pt}
+    {\Large\color{secondary} <<ROLE>>} \\ \vspace{5pt}
+    \small
+    \faEnvelope\ \href{mailto:<<EMAIL>>}{<<EMAIL>>} \quad | \quad
+    \faPhone\ <<PHONE>> \quad | \quad
+    \faMapMarker\ <<LOCATION>> \\ \vspace{3pt}
+    \faLinkedin\ \href{<<LINKEDIN>>}{LinkedIn} \quad | \quad
+    \faGithub\ \href{<<GITHUB>>}{GitHub} \quad | \quad
+    \faGlobe\ \href{<<WEBSITE>>}{Portafolio}
+\end{center}
+
+\vspace{10pt}
+
+% SUMMARY
+\section*{Perfil Profesional}
+<<SUMMARY>>
+
+% EXPERIENCE
+\section*{Experiencia Laboral}
+<<EXPERIENCE_CONTENT>>
+
+% EDUCATION
+\section*{Educación}
+<<EDUCATION_CONTENT>>
+
+% SKILLS
+\section*{Habilidades}
+\begin{itemize}[leftmargin=*, noitemsep]
+<<SKILLS_CONTENT>>
+\end{itemize}
+
+% PROJECTS
+\section*{Proyectos Destacados}
+<<PROJECTS_CONTENT>>
+
+% LANGUAGES
+\section*{Idiomas}
+\begin{itemize}[leftmargin=*, noitemsep]
+<<LANGUAGES_CONTENT>>
+\end{itemize}
+
+\end{document}

@@ -12,7 +12,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
   pointer-events: none;
@@ -219,7 +219,7 @@
     grid-template-columns: 350px 1fr;
     gap: 2rem;
   }
-  
+
   .chart-wrapper {
     width: 500px;
     height: 500px;
@@ -231,11 +231,11 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .categories-panel {
     max-height: 400px;
   }
-  
+
   .chart-wrapper {
     width: 100%;
     height: 500px;
@@ -247,28 +247,28 @@
   .skills-tree-section {
     padding: 3rem 0;
   }
-  
+
   .skills-tree-content {
     gap: 1.5rem;
   }
-  
+
   .chart-wrapper {
     height: 400px;
     padding: 1rem;
   }
-  
+
   .categories-panel {
     padding: 1rem;
   }
-  
+
   .category-card {
     padding: 1rem;
   }
-  
+
   .center-total-skills {
     font-size: 2.5rem;
   }
-  
+
   .legend-items {
     grid-template-columns: 1fr;
   }
@@ -278,16 +278,16 @@
   .chart-wrapper {
     height: 300px;
   }
-  
+
   .chart-center-info {
     padding: 1rem;
     min-width: 150px;
   }
-  
+
   .center-total-skills {
     font-size: 2rem;
   }
-  
+
   .center-category-name,
   .center-skill-name {
     font-size: 1.1rem;

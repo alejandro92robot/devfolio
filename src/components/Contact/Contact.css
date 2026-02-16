@@ -12,7 +12,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
     radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
 }
@@ -239,7 +239,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transition: left 0.5s;
 }
 
@@ -268,17 +268,21 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Efectos de validación */
 .form-input:invalid:not(:focus):not(:placeholder-shown) {
-  border-color: #EF4444;
+  border-color: #ef4444;
 }
 
 .form-input:valid:not(:focus):not(:placeholder-shown) {
-  border-color: #10B981;
+  border-color: #10b981;
 }
 
 /* Responsive */
@@ -287,11 +291,11 @@
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
+
   .contact-info {
     order: 2;
   }
-  
+
   .contact-form {
     order: 1;
   }
@@ -301,32 +305,32 @@
   .contact-section {
     padding: 3rem 0;
   }
-  
+
   .contact-content {
     gap: 2rem;
   }
-  
+
   .contact-form {
     padding: 1.5rem;
   }
-  
+
   .form-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .contact-stats {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-method {
     padding: 1.25rem;
   }
-  
+
   .stat {
     padding: 1.25rem;
   }
-  
+
   .submit-btn {
     padding: 1rem 1.5rem;
     font-size: 1rem;
@@ -338,23 +342,23 @@
     padding: 1.25rem;
     border-radius: 1rem;
   }
-  
+
   .contact-method {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
   }
-  
+
   .method-info {
     align-items: center;
   }
-  
+
   .stat {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
   }
-  
+
   .stat-content {
     align-items: center;
   }
@@ -362,9 +366,16 @@
 
 /* Animaciones específicas para el formulario */
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  75% { transform: translateX(5px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
 }
 
 .form-input:invalid:not(:focus):not(:placeholder-shown) {
@@ -388,8 +399,12 @@
 }
 
 @keyframes loading {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Estados de envío del formulario */
@@ -407,13 +422,13 @@
 .submit-status.success {
   background: rgba(16, 185, 129, 0.1);
   border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #10B981;
+  color: #10b981;
 }
 
 .submit-status.error {
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.3);
-  color: #EF4444;
+  color: #ef4444;
 }
 
 .form-note {
@@ -441,8 +456,12 @@
 
 /* Animación mejorada para el spinner */
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .spinner {

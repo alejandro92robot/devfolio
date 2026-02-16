@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato} 
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Colors
+\definecolor{primary}{RGB}{51, 51, 51}
+\definecolor{secondary}{RGB}{100, 100, 100}
+\definecolor{accent}{RGB}{0, 123, 255}
+
+% Hyperlink Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    filecolor=accent,      
+    urlcolor=accent,
+}
+
+% Section Formatting
+\titleformat{\section}
+{\Large\bfseries\color{primary}}
+{}{0em}
+{}[\titlerule]
+
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Custom Commands
+\newcommand{\entry}[4]{
+    \noindent\textbf{#1} \hfill \textit{#2} \\
+    \noindent\textit{#3} \\
+    \noindent\small{#4} \vspace{8pt}
+}
+
+\newcommand{\project}[4]{
+    \noindent\textbf{\href{#2}{#1}} \hfill \textit{#3} \\
+    \noindent\small{#4} \vspace{6pt}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% HEADER
+\begin{center}
+    {\Huge\bfseries Alejandro Aguilera} \\ \vspace{5pt}
+    {\Large\color{secondary} Desarrollador Full Stack \& Investigador} \\ \vspace{5pt}
+    \small
+    \faEnvelope\ \href{mailto:aguilerac.alejandro@gmail.com}{aguilerac.alejandro@gmail.com} \quad | \quad
+    \faPhone\ +569 49040567 \quad | \quad
+    \faMapMarker\ Santiago, Chile \\ \vspace{3pt}
+    \faLinkedin\ \href{https://linkedin.com/in/tu-perfil}{LinkedIn} \quad | \quad
+    \faGithub\ \href{https://github.com/alejandro92robot}{GitHub} \quad | \quad
+    \faGlobe\ \href{https://alejandro92robot.github.io/devfolio/}{Portafolio}
+\end{center}
+
+\vspace{10pt}
+
+% SUMMARY
+\section*{Perfil Profesional}
+Desarrollador especializado en soluciones tecnológicas y científicas innovadoras que impulsan la sostenibilidad. Con experiencia en el desarrollo de aplicaciones web full-stack, sistemas embebidos y simulación física. Apasionado por la intersección entre la tecnología y la ciencia aplicada.
+
+% EXPERIENCE
+\section*{Experiencia Laboral}
+\entry{Investigador en Física de Plasmas}{2016 - 2017}{CCHEN}{Investigación en física de plasmas y simulación física.}
+\entry{Desarrollador Full Stack}{2022 - 2023}{IONE}{Desarrollé aplicaciones web full-stack utilizando React Y C\#. Implementé soluciones de visualización de datos en tiempo real y optimicé el rendimiento de aplicaciones existentes.}
+\entry{Investigador en Tecnología}{2023 - Presente}{COLEGIO AMERICAN BRITISH SCHOOL}{Diseño y desarrollo de experiencias de aprendizaje interactivas para la enseñanza de tecnologia y habilidades STEAM.}
+\entry{Desarrollador Mobile}{2023 - Presente}{Independiente}{Diseño y desarrollo de aplicaciones mobiles andriod y ios. Creación de Saas e integración con cloud.}
+
+% EDUCATION
+\section*{Educación}
+\entry{Licenciatura en educación en Física y Pedagogía en Física con Mención en Tecnolog}{2011 - 20165}{Universidad Metropolitana de Ciencias de la Educación}{Especialización en sistemas computacionales y física aplicada.}
+\entry{Analista Programador}{2021 - 2023}{INACAP}{Especialización en tecnologías web e IOT.}
+
+% SKILLS
+\section*{Habilidades}
+\begin{itemize}[leftmargin=*, noitemsep]
+\item \textbf{Frontend Development}: React, JavaScript, TypeScript, HTML5, CSS3, Material UI, Next.js
+\item \textbf{Backend Development}: Node.js, Python, Express, FastAPI, MongoDB, SQL
+\item \textbf{Mobile Development}: React Native, Flutter, iOS Development, Android Development, Expo, Mobile UI/UX
+\item \textbf{Hardware \& Embedded Systems}: ESP32, ESP8266, Arduino, Diseño de Circuitos, Programación de Microcontroladores, Sistemas Embebidos, Protocolos de Comunicación
+\item \textbf{Automatización \& IoT}: Automatización Industrial, Robótica, Sensores y Actuadores, Sistemas IoT, Domótica, Control de Procesos
+\item \textbf{Simulación Física}: Geant4, ROOT Framework, Protección Radiológica, Análisis de Datos Experimentales, Métodos de Monte Carlo, Instrumentación Nuclear
+\item \textbf{Cybersecurity}: Wireshark, Metasploit, Nmap, Burp Suite, OWASP Top 10, Penetration Testing
+\item \textbf{Machine Learning \& AI}: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy
+\item \textbf{DevOps \& Cloud}: Docker, AWS, Azure, CI/CD
+\end{itemize}
+
+% PROJECTS
+\section*{Proyectos Destacados}
+\project{Induverso}{https://induverso.cl}{React, Node.js, MongoDB, MaterialUI}{Ecosistema industrial, científico y tecnológico enfocado en resolver las necesidades reales del sector productivo chileno.}
+\project{Mechatronics Eyes}{https://tuanalytics.com}{Arduino UNO, C++, Python}{Ojos mecatrónicos con microservos y movimiento por control analógico.}
+\project{Modumetrix e-commerce}{https://tuanalytics.com}{React, Three.js, MongoDB, Node.js}{Plataforma de ventas modulares innovadora. Construyes tu productos a medida con visualizador 3D en vivo.}
+\project{Caracterización eléctrica y óptica de la aguja de plasma.}{https://www.academia.edu/72221585/Electrical_and_Optical_Characterization_of_the_Plasma_Needle_for_Use_in_Biomedical_Applications?email_work_card=view-paper}{Plasma Needle, MDO 3034, LR1 Serial Bus Spectrometer, NumPy}{Este estudio analiza las características eléctricas y de emisión óptica de una aguja de plasma de corriente continua.}
+\project{Aetheria}{https://aetherea-platform.vercel.app/}{React, Node.js, MongoDB}{Plataforma digital para la gestión y visualización de datos en tiempo real.}
+
+% LANGUAGES
+\section*{Idiomas}
+\begin{itemize}[leftmargin=*, noitemsep]
+\item Español (Nativo)
+\item Inglés (Intermedio)
+\end{itemize}
+
+\end{document}
