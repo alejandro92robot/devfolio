@@ -31,7 +31,11 @@ jobs:
       - name: Compile LaTeX CV
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv/cv.tex
+          root_file: cv.tex
+          working_directory: cv
+
+      - name: List files (debug)
+        run: ls -R
 
       - name: Move CV to Public
         run: mv cv/cv.pdf public/cv.pdf
