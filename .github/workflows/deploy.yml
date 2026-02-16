@@ -36,15 +36,17 @@ jobs:
       - name: List files (debug)
         run: ls -R
 
-      - name: Move CV to Public
+      - name: Locate and Move PDF
         run: |
-          if [ -f "cv.pdf" ]; then
-            mv cv.pdf public/cv.pdf
-          elif [ -f "cv/cv.pdf" ]; then
-             mv cv/cv.pdf public/cv.pdf
+          echo "Searching for PDF..."
+          PDF_PATH=$(find . -name "*.pdf" -type f | grep "cv" | head -n 1)
+          
+          if [ -n "$PDF_PATH" ]; then
+            echo "Found PDF at: $PDF_PATH"
+            mv "$PDF_PATH" public/cv.pdf
           else
-             echo "Error: PDF not found!"
-             exit 1
+            echo "Error: No PDF found after compilation!"
+            exit 1
           fi
 
       - name: Build
