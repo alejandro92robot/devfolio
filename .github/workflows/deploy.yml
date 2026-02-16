@@ -31,14 +31,21 @@ jobs:
       - name: Compile LaTeX CV
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: cv.tex
-          working_directory: cv
+          root_file: cv/cv.tex
 
       - name: List files (debug)
         run: ls -R
 
       - name: Move CV to Public
-        run: mv cv/cv.pdf public/cv.pdf
+        run: |
+          if [ -f "cv.pdf" ]; then
+            mv cv.pdf public/cv.pdf
+          elif [ -f "cv/cv.pdf" ]; then
+             mv cv/cv.pdf public/cv.pdf
+          else
+             echo "Error: PDF not found!"
+             exit 1
+          fi
 
       - name: Build
         run: npm run build
