@@ -9,7 +9,7 @@ const About = () => {
             <h2 className="section-title">Sobre Mí</h2>
             <div className="about-description">
               <p>
-                Soy un desarrollador full stack apasionado por la tecnología y la innovación. 
+                Soy un desarrollador apasionado por la ciencia, la tecnología y la innovación. 
                 Me encanta crear soluciones digitales que impacten positivamente en la vida de las personas.
               </p>
               <p>

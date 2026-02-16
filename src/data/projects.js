@@ -19,7 +19,7 @@ export const projects = [
     category: "educativo",
     github: "https://github.com/alejandro92robot/biblioteca_front.git",
     demo: "https://github.com/alejandro92robot/biblioteca_front.git",
-    featured: true
+    featured: false
   },
   {
     id: 3,
@@ -52,6 +52,17 @@ export const projects = [
     category: "profesional",
     github: "https://github.com/tuusuario/analytics-dashboard",
     demo: "https://tuanalytics.com",
+    featured: true
+  },
+  {
+    id: 6,
+    title: "Caracterización eléctrica y óptica de la aguja de plasma para su uso en aplicaciones biomédicas.",
+    description: "Este estudio analiza las características eléctricas y de emisión óptica de una aguja de plasma de corriente continua.",
+    image: "/devfolio/images/plasma_needle.png",
+    technologies: ["Plasma Needle", "MDO 3034", "LR1 Serial Bus Spectrometer", "NumPy"],
+    category: "profesional",
+    github: "https://www.academia.edu/72221585/Electrical_and_Optical_Characterization_of_the_Plasma_Needle_for_Use_in_Biomedical_Applications?email_work_card=view-paper",
+    demo: "https://www.academia.edu/72221585/Electrical_and_Optical_Characterization_of_the_Plasma_Needle_for_Use_in_Biomedical_Applications?email_work_card=view-paper",
     featured: true
   }
 ];
@@ -91,9 +102,9 @@ export const skills = [
     items: [
       { name: "React Native", level: 89, description: "Cross-platform, componentes nativos, performance" },
       { name: "Flutter", level: 86, description: "Widgets, Dart, animaciones nativas" },
-      { name: "iOS Development", level: 81, description: "Swift, UIKit, SwiftUI, App Store" },
-      { name: "Android Development", level: 84, description: "Kotlin, Jetpack Compose, Google Play" },
-      { name: "Expo", level: 86, description: "Development builds, OTA updates, plugins" },
+      { name: "iOS Development", level: 71, description: "Swift, UIKit, SwiftUI, App Store" },
+      { name: "Android Development", level: 79, description: "Kotlin, Jetpack Compose, Google Play" },
+      { name: "Expo", level: 91, description: "Development builds, OTA updates, plugins" },
       { name: "Mobile UI/UX", level: 83, description: "Design systems, responsive layouts, gestures" }
     ]
   },
@@ -124,20 +135,20 @@ export const skills = [
       { name: "Control de Procesos", level: 81, description: "PID, sistemas de feedback, estabilidad" }
     ]
   },
- /*{
-    category: "Espectroscopía & Análisis Nuclear",
-    icon: "⚛️",
-    color: "#6C5CE7",
-    items: [
-      { name: "Fluorescencia de Rayos X (XRF)", level: 91, description: "Desarrollo de sistemas XRF para análisis de concentraciones en keroseno" },
-      { name: "Espectroscopía de Plasma", level: 89, description: "Trabajo con agujas de plasma, análisis espectral" },
-      { name: "Análisis de Yodo en Keroseno", level: 93, description: "Desarrollo de métodos para medición de concentraciones de yodo" },
-      { name: "Espectrometría Gamma", level: 85, description: "Análisis de materiales radiactivos, identificación de isótopos" },
-      { name: "Técnicas de Espectroscopía", level: 88, description: "Absorción atómica, emisión, técnicas ópticas" },
-      { name: "Análisis de Materiales", level: 86, description: "Caracterización de muestras, preparación de especímenes" },
-      { name: "Calibración de Instrumentación", level: 90, description: "Calibración de espectrómetros, validación de métodos" }
-    ]
-  },*/
+  /*{
+     category: "Espectroscopía & Análisis Nuclear",
+     icon: "⚛️",
+     color: "#6C5CE7",
+     items: [
+       { name: "Fluorescencia de Rayos X (XRF)", level: 91, description: "Desarrollo de sistemas XRF para análisis de concentraciones en keroseno" },
+       { name: "Espectroscopía de Plasma", level: 89, description: "Trabajo con agujas de plasma, análisis espectral" },
+       { name: "Análisis de Yodo en Keroseno", level: 93, description: "Desarrollo de métodos para medición de concentraciones de yodo" },
+       { name: "Espectrometría Gamma", level: 85, description: "Análisis de materiales radiactivos, identificación de isótopos" },
+       { name: "Técnicas de Espectroscopía", level: 88, description: "Absorción atómica, emisión, técnicas ópticas" },
+       { name: "Análisis de Materiales", level: 86, description: "Caracterización de muestras, preparación de especímenes" },
+       { name: "Calibración de Instrumentación", level: 90, description: "Calibración de espectrómetros, validación de métodos" }
+     ]
+   },*/
   {
     category: "Simulación Física",
     icon: "🔬",

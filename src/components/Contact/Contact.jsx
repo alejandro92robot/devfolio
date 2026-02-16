@@ -142,23 +142,6 @@ const Contact = () => {
                 </a>
               ))}
             </div>
-
-            <div className="contact-stats">
-              <div className="stat">
-                <Zap size={24} className="stat-icon" />
-                <div className="stat-content">
-                  <span className="stat-number">24h</span>
-                  <span className="stat-label">Tiempo de respuesta</span>
-                </div>
-              </div>
-              <div className="stat">
-                <MessageCircle size={24} className="stat-icon" />
-                <div className="stat-content">
-                  <span className="stat-number">100%</span>
-                  <span className="stat-label">Disponibilidad</span>
-                </div>
-              </div>
-            </div>
           </div>
 
           <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>

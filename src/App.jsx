@@ -6,6 +6,8 @@ import Projects from './components/Projects/Projects'
 import Skills from './components/Skills/Skills'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer';
+import SkillsTree from './components/Skills/SkillsTree';
 import './styles/globals.css'
 
 function App() {
@@ -27,8 +29,10 @@ function App() {
       <Hero />
       <Projects />
       <Skills />
+      <SkillsTree />
       <About />
       <Contact />
+      <Footer />
     </div>
   )
 }
