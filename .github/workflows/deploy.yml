@@ -39,7 +39,7 @@ jobs:
       - name: Locate and Move PDF
         run: |
           echo "Searching for PDF..."
-          PDF_PATH=$(find . -name "*.pdf" -type f | grep "cv" | head -n 1)
+          PDF_PATH=$(find . -name "*.pdf" -type f -not -path "./public/*" | grep "cv" | head -n 1)
           
           if [ -n "$PDF_PATH" ]; then
             echo "Found PDF at: $PDF_PATH"
